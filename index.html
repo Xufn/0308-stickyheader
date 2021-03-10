@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="bg.jpg" class="banner">
+        <a href="#" class="logo">Brand.</a>
+        <div class="toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contract</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Subscribe to The Economist</h2>
+        <p>Plenty of news outlets deliver the what and where of world events. The Economist gives you the why. The Economist brings its readers a unique and independent perspective, covering every major development you need to know – as well as many things you never realised you needed to know. Each week, The Economist spans everything from European and world news, politics, business and finance, science, technology and the arts. Available in print-only, digital-only or as a print and digital package, you have the opportunity to enjoy The Economist's stimulating debate, intelligent insight and genuine quality however you wish whether you're at home or travelling. And now digital subscriptions also include The Economist Espresso, our daily app for smartphones. Go beyond the headlines, to get the bigger global picture. Subscribe to The Economist today.
+
+
+            In addition to reading The Economist in print, you can enjoy The Economist online on Economist.com and through various digital editions, including The Economist apps for iPhone, iPad, Android, BlackBerry, Windows 8, Chrome and Kindle Fire as well as The Economist in audio and "The Economist Espresso", our morning briefing direct to your smartphone or inbox.
+            
+            Read more about the new subscription options under Choose your subscription in the menu to the left.</p>
+    </section>
+    <script>
+        window.addEventListener("scroll",function(){
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        const navigation = document.querySelector('nav');
+        document.querySelector('.toggle').onclick = function(){
+            this.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
